@@ -14,3 +14,33 @@ commitOrder - finalize the order and move it for fulfillment
 Also add necessary functions like CreateVendor & grace handling of errors and exceptions etc..
 
 Language - Node & Typescript
+
+
+
+## APIs
+
+### createOrder API
+
+```js
+URL : "{BASE_URL}/createOrder"
+Method : POST
+PAYLOAD: {
+  "orderId" : "7",
+  "customerInfo" : {
+    "name" : "rahulgupta",
+    "email" : "rahul@yahoo.com",
+    "phone" : "987023232"
+  },
+  "productList" : [{
+    "name" : "fruits"
+  }]
+}
+```
+
+### ViewOrder API
+
+```js
+URL : "{BASE_URL}/viewOrder"
+Method : GET
+```
+
